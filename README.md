@@ -25,7 +25,7 @@ The One to Many CGANs architecture, proposed by Jing Liao, is utilized as the fi
 **The results** after training using One to Many CGANs model:
 
 <p align="center">
-  <img src="output.gif" alt="Example Gif" />
+  <img src="graphics/output.gif" alt="Example Gif" />
 </p>
 
 ### LSTM - CGANs
