@@ -1,0 +1,4 @@
+LSTMGAN_checkpoint/
+one2manyGAN_adam_checkpoint/
+one2manyGAN_adaml1_checkpoint/
+one2manyGAN_wasserstrein_checkpoint/
