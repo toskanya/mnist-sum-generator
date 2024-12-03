@@ -22,6 +22,12 @@ The One to Many CGANs architecture, proposed by Jing Liao, is utilized as the fi
 - **Generators**: Takes the target sum and sequence length as input, generating a sequence of digit images.
 - **Discriminator**: Evaluates whether the generated sequence looks like real handwritten digits and if it satisfies the sum condition.
 
+**The results** after training using One to Many CGANs model:
+
+<p align="center">
+  <img src="output.gif" alt="Example Image" />
+</p>
+
 ### LSTM - CGANs
 The LSTM - CGAN approach, developed by me, performes better than the One to Many CGANs by introducing Long Short-Term Memory (LSTM) units into the conditional GAN framework. This allows the model to generate a sequence of digits with better sequential consistency and capture the dependencies between the digits in the sequence. In this architecture, one LSTM model is connected to many CGANs models.
 
@@ -29,9 +35,15 @@ In this approach:
 - **LSTM Layers**: These layers help the generator maintain context between digits in the sequence, improving the flow and coherence of the generated sequence.
 - **CGAN Frameworks**: The core conditional GAN structure is maintained, with the generator producing digit images based on the target sum and sequence length, while the discriminator ensures both realism and correctness of the sum.
 
-### Benefits of LSTM - CGANs
+Benefits of LSTM - CGANs:
 - **Sequential Consistency**: The LSTM units improve the temporal relationship between digits, making the generated sequences more coherent.
 - **Improved Accuracy**: This method results in more accurate sequences of digits, where the sum condition is more reliably met.
+
+**The results** after training using LSTM-CGANs model:
+
+<p align="center">
+  <img src="graphics/Screenshot 2024-12-03 140707.png" alt="Example Image" />
+</p>
 
 ## Installation
 To get started, clone the repository and install the required dependencies:
