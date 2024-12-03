@@ -15,6 +15,10 @@ This project focuses on generating a sequence of handwritten digits that sum up 
 ### One to Many Conditional GANs (CGANs)
 The One to Many CGANs architecture, proposed by Jing Liao, is utilized as the first approach in this project. It involves training a conditional Generative Adversarial Network (GAN) where multiple generators takes a target sum and generates a corresponding sequence of digits and one discriminator. This method allows for the generation of multiple possible sequences that sum up to the same number, demonstrating the flexibility of the model in generating different handwriting styles and sequences. **However**, this method has a drawback which is there is no correlation between the generators' outputs, hence the digits don't add up to the correct target sum.
 
+<p align="center">
+  <img src="graphics/onetomanycgan.png" alt="Example Image" />
+</p>
+
 - **Generators**: Takes the target sum and sequence length as input, generating a sequence of digit images.
 - **Discriminator**: Evaluates whether the generated sequence looks like real handwritten digits and if it satisfies the sum condition.
 
